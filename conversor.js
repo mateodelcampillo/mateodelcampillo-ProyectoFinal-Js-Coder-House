@@ -22,8 +22,16 @@ function calcular(){
 monedaUno.addEventListener("change", calcular)
 monedaDos.addEventListener("change", calcular)
 cantidadUno.addEventListener("input", calcular)
-cantidaDos.addEventListener("input", calcular)
-
+cantidadDos.addEventListener("input", calcular)
+boton.addEventListener("click", ()=>{
+    const temp = monedaUno.value
+    monedaUno.value = monedaDos.value
+    monedaDos.value = temp
+    // const temp1 = cantidadUno.value;
+    // cantidadUno.value = cantidadDos.value;
+    // cantidadDos.value = temp1
+    calcular()
+})
 
 
 
