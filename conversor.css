@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 158, 47);
+    
+}
+.cambio-container{
+    margin: 10px;
+}
