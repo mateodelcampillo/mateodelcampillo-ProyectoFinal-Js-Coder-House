@@ -1,16 +1,51 @@
+document.querySelector(".uno").addEventListener("click", ()=> {operacion = 1 
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".dos").addEventListener("click", ()=> {operacion = 2
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".tres").addEventListener("click", ()=> {operacion = 3
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".cuatro").addEventListener("click", ()=> {operacion = 4
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".cinco").addEventListener("click", ()=>{ operacion = 5
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".seis").addEventListener("click", ()=> {operacion = 6
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".siete").addEventListener("click", ()=> {operacion = 7
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".ocho").addEventListener("click", ()=> {operacion = 8
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".nueve").addEventListener("click", ()=> {operacion = 9
+pushOp()
+console.log(arrayResultado)})
+document.querySelector(".cero").addEventListener("click", ()=> {operacion = 0
+pushOp()
+console.log(arrayResultado)})
+
 // Array almacenador de resultados
 arrayResultado = []
-
+pushOp = ()=>arrayResultado.push(operacion)
 
 historial = JSON.parse(localStorage.getItem("arrayResult")) 
 // Variable que almacena el tipo de operacion a realizar
 let operacion = ""
 // Evento onclick para determinar que operacion se va a ejecutar
-document.querySelector(".suma").addEventListener("click", ()=> operacion = "+")
-document.querySelector(".resta").addEventListener("click", ()=> operacion = "-")
-document.querySelector(".multiplicacion").addEventListener("click", ()=> operacion = "*")
-document.querySelector(".division").addEventListener("click", ()=> operacion = "/")
-document.querySelector(".division").addEventListener("click", ()=> operacion = "/")
+document.querySelector(".suma").addEventListener("click", ()=> {operacion = '+'
+pushOp()})
+document.querySelector(".resta").addEventListener("click", ()=> {operacion = '-'
+pushOp()})
+document.querySelector(".multiplicacion").addEventListener("click", ()=> {operacion = '*'
+pushOp()})
+document.querySelector(".division").addEventListener("click", ()=> {operacion = '/'
+pushOp()})
+
 // Evento para resetear el resultado y realizar una nueva operacion
 document.querySelector(".reset").addEventListener("click", ()=> {
     resultado = 0
