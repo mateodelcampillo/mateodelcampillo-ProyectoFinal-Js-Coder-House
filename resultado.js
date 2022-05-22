@@ -1,33 +1,33 @@
-document.querySelector(".uno").addEventListener("click", ()=> {operacion = 1 
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".dos").addEventListener("click", ()=> {operacion = 2
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".tres").addEventListener("click", ()=> {operacion = 3
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".cuatro").addEventListener("click", ()=> {operacion = 4
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".cinco").addEventListener("click", ()=>{ operacion = 5
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".seis").addEventListener("click", ()=> {operacion = 6
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".siete").addEventListener("click", ()=> {operacion = 7
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".ocho").addEventListener("click", ()=> {operacion = 8
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".nueve").addEventListener("click", ()=> {operacion = 9
-pushOp()
-console.log(arrayResultado)})
-document.querySelector(".cero").addEventListener("click", ()=> {operacion = 0
-pushOp()
-console.log(arrayResultado)})
+// document.querySelector(".uno").addEventListener("click", ()=> {operacion = 1 
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".dos").addEventListener("click", ()=> {operacion = 2
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".tres").addEventListener("click", ()=> {operacion = 3
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".cuatro").addEventListener("click", ()=> {operacion = 4
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".cinco").addEventListener("click", ()=>{ operacion = 5
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".seis").addEventListener("click", ()=> {operacion = 6
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".siete").addEventListener("click", ()=> {operacion = 7
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".ocho").addEventListener("click", ()=> {operacion = 8
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".nueve").addEventListener("click", ()=> {operacion = 9
+// pushOp()
+// console.log(arrayResultado)})
+// document.querySelector(".cero").addEventListener("click", ()=> {operacion = 0
+// pushOp()
+// console.log(arrayResultado)})
 
 // Array almacenador de resultados
 arrayResultado = []
