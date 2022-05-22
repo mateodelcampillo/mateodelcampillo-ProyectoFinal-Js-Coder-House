@@ -31,6 +31,7 @@ console.log(arrayResultado)})
 
 // Array almacenador de resultados
 arrayResultado = []
+arrayResultado2 = []
 pushOp = ()=>arrayResultado.push(operacion)
 
 historial = JSON.parse(localStorage.getItem("arrayResult")) 
