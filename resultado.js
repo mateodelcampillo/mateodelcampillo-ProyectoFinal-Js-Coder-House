@@ -1,24 +1,36 @@
 uno = document.querySelector(".uno").addEventListener("click", ()=>{op = 1
 pushOp()
+n1.value += op
 console.log(arrayResultado)})
 dos = document.querySelector(".dos").addEventListener("click", ()=>{op = 2
-   pushOp()})
+   pushOp()
+   n1.value += op})
 tres = document.querySelector(".tres").addEventListener("click", ()=>{op = 3
-   pushOp()})
+   pushOp()
+   n1.value += op})
 cuatro = document.querySelector(".cuatro").addEventListener("click", ()=>{op = 4
-   pushOp()})
+   pushOp()
+   n1.value += op})
 cinco = document.querySelector(".cinco").addEventListener("click", ()=>{op = 5
-   pushOp()})
+   pushOp()
+   n1.value += op})
 seis = document.querySelector(".seis").addEventListener("click", ()=>{op = 6
-   pushOp()})
+   pushOp()
+   n1.value += op})
 siete = document.querySelector(".siete").addEventListener("click", ()=>{op = 7
-   pushOp()})
+   pushOp()
+   n1.value += op})
 ocho = document.querySelector(".ocho").addEventListener("click", ()=>{op = 8
-   pushOp()})
+   pushOp()
+   n1.value += op})
 nueve = document.querySelector(".nueve").addEventListener("click", ()=>{op = 9
-   pushOp()})
+   pushOp()
+   n1.value += op})
 cero = document.querySelector(".cero").addEventListener("click", ()=>{op = 0
-   pushOp()})
+   pushOp()
+   n1.value += op})
+n1 = document.querySelector(".n1")
+n1.value = ""
 // // Array almacenador de resultados
 // uno.addEventListener("click", ()=>{
 //    arrayResultado.push(uno.value)
@@ -56,6 +68,7 @@ pushOp = ()=>{
 }
    arrayResultado = []
    resultado = []
+ 
 // arrayResultado2 = []
 // pushOp = ()=>arrayResultado.push(operacion)
 
@@ -64,17 +77,22 @@ pushOp = ()=>{
 // let operacion = ""
 // // Evento onclick para determinar que operacion se va a ejecutar
 document.querySelector(".suma").addEventListener("click", ()=> {op = '+'
-pushOp()})
+pushOp()
+n1.value += op})
 document.querySelector(".resta").addEventListener("click", ()=> {op = '-'
-pushOp()})
+pushOp()
+n1.value += op})
 document.querySelector(".multiplicacion").addEventListener("click", ()=> {op = '*'
-pushOp()})
+pushOp()
+n1.value += op})
 document.querySelector(".division").addEventListener("click", ()=> {op = '/'
-pushOp()})
+pushOp()
+n1.value += op})
 // 
 igual = document.querySelector(".igual").addEventListener("click", ()=>{
   opToString = arrayResultado.join("")
-   resultado = eval(opToString)
+  resultado = eval(opToString)
+  n1.value = resultado
    arrayResultado = []
    console.log(resultado)})
 // // Evento para resetear el resultado y realizar una nueva operacion
