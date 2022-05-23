@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +9,53 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="conversor.html">
 </head>
+
 <body>
-    <div class="numeros"> 
+    <div class="numeros">
         <a href="conversor.html">Clickeaa</a>
         <!-- Div contenedor de texto donde se ingresan los numeros a operar -->
- <div class="text">  
-<input type="text" class="n1">
-<input type="text" class="n2"><br>
-<button class="siete" value="7">7</button>
-<button class="ocho" value="8">8</button>
-<button class="nueve" value="9">9</button><br>
-<button class="cuatro" value="4">4</button>
-<button class="cinco" value="5">5</button>
-<button class="seis" value="6">6</button><br>
-<button class="uno" value="1">1</button>
-<button class="dos" value="2">2</button>
-<button class="tres" value="3">3</button><br>
-<button class="cero" value="0">0</button>
-</div> 
-<div class="operacion">
-        <!-- Div contenedor de input con las distintas operaciones -->
+        <div class="text">
+            <input type="text" class="n1" onmousedown="return false;">
+            <input type="text" class="n2" onmousedown="return false;"><br>
+            <input type="button" class="siete" value="7">
+            <input type="button" class="ocho" value="8">
+            <input type="button" class="nueve" value="9"><br>
+            <input type="button" class="cuatro" value="4">
+            <input type="button" class="cinco" value="5">
+            <input type="button" class="seis" value="6"><br>
+            <input type="button" class="uno" value="1">
+            <input type="button" class="dos" value="2">
+            <input type="button" class="tres" value="3"><br>
+            <input type="button" class="cero" value="0">
+            <input type="button" class="parentesis1" value="(">
+            <input type="button" class="parentesis2" value=")">
+        </div>
+        <div class="operacion">
+            <!-- Div contenedor de input con las distintas operaciones -->
 
-  <input type="button" class="suma" id= "boton"value="+">  
-  <input type="button" class="resta" id= "boton" value="-">  
-  <input type="button" class="multiplicacion" id= "boton" value="*">  
-  <input type="button" class="division" id= "boton" value="/">  
-  <input type="button" class="reset" id= "boton" value="reset"> 
-  <input type="button" class="igual" id= "boton" value="=">  
-  
-    
-</div>
-<!-- Resultado de la operacion -->
-<p class="resultado"></p>
-<!--  Input que mostrara el historial de caluclos -->
-<input type="button" class="botonHistoriall" value="Historial">
-<p class="textoHistorial"></p>
-<div class="conversor"></div>
-    
-</div>
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="resultado.js"></script>
-<script src="conversor.js"></script>
+            <input type="button" class="suma" id="boton" value="+">
+            <input type="button" class="resta" id="boton" value="-">
+            <input type="button" class="multiplicacion" id="boton" value="*">
+            <input type="button" class="division" id="boton" value="/">
+            <input type="button" class="delete" id="boton" value="C">
+            <input type="button" class="back" id="boton" value="Back">
+            <input type="button" class="igual" id="boton" value="=">
+
+
+        </div>
+        <!-- Resultado de la operacion -->
+        <p class="resultado"></p>
+        <!--  Input que mostrara el historial de caluclos -->
+        <input type="button" class="botonHistoriall" value="Historial">
+        <p class="textoHistorial"></p>
+        <div class="conversor"></div>
+
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="resultado.js"></script>
+    <script src="conversor.js"></script>
 
 </body>
+
 </html>
