@@ -1,3 +1,4 @@
+const resultadoJson = []
 uno = document.querySelector(".uno").addEventListener("click", ()=>{op = 1
 pushOp()
 n1.value += op
@@ -115,13 +116,45 @@ opToString.slice()
 // 
 igual = document.querySelector(".igual").addEventListener("click", ()=>{
   opToString = arrayResultado.join("")
-  resultado = eval(opToString)
+  if(opToString == ""){
+   historialVacio = [Swal.fire({
+      icon: 'error',
+      title: 'ERROR',
+      text: "No se esta realizando ninguna operacion",
+      
+    })]
+     n2.value = ""
+  }else{
+   resultado = eval(opToString)
+   resultadoJson.push(`${resultadoJson.length + 1}-  ${opToString} = ${resultado}`)
+   console.log(resultadoJson)
+   localStorage.setItem("historial", JSON.stringify(resultadoJson))
   n1.value = ""
   n2.value = resultado
   arrayResultado = []
-   // arrayResultado = []
-   console.log(resultado)})
-// // Evento para resetear el resultado y realizar una nueva operacion
+  console.log(resultado)}})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // // Evento para resetear el resultado y realizar una nueva operacion
 // document.querySelector(".reset").addEventListener("click", ()=> {
 //     resultado = 0
 //     document.querySelector(".resultado").innerHTML = resultado
@@ -162,12 +195,12 @@ igual = document.querySelector(".igual").addEventListener("click", ()=>{
 // // Se obtiene del localStorage el JSON con los resultados
 // const  textoHistorial = document.querySelector(".textoHistorial");
 // // Funcion que devuelve el historial
-// // historialVacio = [Swal.fire({
-// //    icon: 'error',
-// //    title: 'Oops...',
-// //    text: "No hay historial!, realice una operacion",
+// historialVacio = [Swal.fire({
+//    icon: 'error',
+//    title: 'Oops...',
+//    text: "No hay historial!, realice una operacion",
    
-// //  })]
+//  })]
 
 // function devolverHistorial() {
 //     (localStorage.length > 0)? inner() : Swal.fire({
