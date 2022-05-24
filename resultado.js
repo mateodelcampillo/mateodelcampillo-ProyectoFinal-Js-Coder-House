@@ -1,7 +1,7 @@
 const resultadoJson = []
-// let historialAnterior = JSON.parse(localStorage.getItem("historial"))
-// let historialCompleto = historialAnterior;
-let historialArray = JSON.parse(localStorage.getItem("historial")) 
+let historialAnterior = JSON.parse(localStorage.getItem("historial"))
+let historialCompleto = historialAnterior;
+/*let historialArray = JSON.parse(localStorage.getItem("historial")) */
 
 
 
@@ -121,7 +121,7 @@ document.querySelector(".reset").addEventListener("click", ()=> {
 historialDom = document.querySelector(".botonHistorial").addEventListener("click", ()=>{
    
    document.querySelector(".textoHistorial").innerHTML = ""
-   document.querySelector(".textoHistorial").innerHTML += historialArray.join("")
+   document.querySelector(".textoHistorial").innerHTML += historialCompleto.join("")
 
 })
 
@@ -146,10 +146,10 @@ igual = document.querySelector(".igual").addEventListener("click", ()=>{
 
 
 
-   historialArray = JSON.parse(localStorage.getItem("historial"))
+   historialAnterior = JSON.parse(localStorage.getItem("historial"))
 
-   // historialCompleto = historialAnterior.concat(historialArray);
-   // localStorage.setItem("historial", JSON.stringify(historialCompleto))
+    historialCompleto = historialCompleto.concat(historialAnterior);
+    localStorage.setItem("historial", JSON.stringify(historialCompleto))
 
 
 
