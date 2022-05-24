@@ -1,4 +1,10 @@
 const resultadoJson = []
+// let historialAnterior = JSON.parse(localStorage.getItem("historial"))
+// let historialCompleto = historialAnterior;
+let historialArray = JSON.parse(localStorage.getItem("historial")) 
+
+
+
 uno = document.querySelector(".uno").addEventListener("click", ()=>{op = 1
 pushOp()
 n1.value += op
@@ -109,9 +115,17 @@ n1.value += op})
 document.querySelector(".division").addEventListener("click", ()=> {op = '/'
 pushOp()
 n1.value += op})
-document.querySelector(".back").addEventListener("click", ()=> {
-opToString.slice()
+document.querySelector(".reset").addEventListener("click", ()=> {
+   localStorage.setItem("historial", JSON.stringify("No hay Historial"))
 })
+historialDom = document.querySelector(".botonHistorial").addEventListener("click", ()=>{
+   
+   document.querySelector(".textoHistorial").innerHTML = ""
+   document.querySelector(".textoHistorial").innerHTML += historialArray.join("")
+
+})
+
+
 
 // 
 igual = document.querySelector(".igual").addEventListener("click", ()=>{
@@ -125,14 +139,31 @@ igual = document.querySelector(".igual").addEventListener("click", ()=>{
     })]
      n2.value = ""
   }else{
+
    resultado = eval(opToString)
-   resultadoJson.push(`${resultadoJson.length + 1}-  ${opToString} = ${resultado}`)
-   console.log(resultadoJson)
+   resultadoJson.push(`${resultadoJson.length + 1})  ${opToString} = ${resultado}<br>`)
    localStorage.setItem("historial", JSON.stringify(resultadoJson))
+
+
+
+   historialArray = JSON.parse(localStorage.getItem("historial"))
+
+   // historialCompleto = historialAnterior.concat(historialArray);
+   // localStorage.setItem("historial", JSON.stringify(historialCompleto))
+
+
+
+
+   
+   
+
+
+
+  console.log()
   n1.value = ""
   n2.value = resultado
   arrayResultado = []
-  console.log(resultado)}})
+  }})
 
 
 
