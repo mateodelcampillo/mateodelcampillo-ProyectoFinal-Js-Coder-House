@@ -1,12 +1,12 @@
+arrayResultado = []
+resultado = []
+// Declaracion de array resultado
 const resultadoJson = []
+//  Se limpia localStorage
 historialArray = localStorage.setItem("historial", JSON.stringify(false))
+// Variable con valor booleano para indicar que el historial esta vacio
 historialVacio = true
-
-
-
-
-
-
+// Llama
 uno = document.querySelector(".uno").addEventListener("click", () => {
    op = 1
    pushOp()
@@ -89,8 +89,7 @@ n2.value = ""
 pushOp = () => {
    arrayResultado.push(op)
 }
-arrayResultado = []
-resultado = []
+
 
 
 document.querySelector(".suma").addEventListener("click", () => {
@@ -113,8 +112,20 @@ document.querySelector(".division").addEventListener("click", () => {
    pushOp()
    n1.value += op
 })
+document.querySelector(".delete").addEventListener("click", ()=>{
+   n1.value = ""
+   n2.value = ""
+   arrayResultado = []
+})
+document.querySelector(".back").addEventListener("click", ()=>{
+   arrayResultado.pop()
+   n1.value = n1.value.slice("", -1)
+})
+
 document.querySelector(".reset").addEventListener("click", () => {
    localStorage.setItem("historial", JSON.stringify(false))
+   historialArray = []
+   document.querySelector(".textoHistorial").innerHTML = ""
 })
 historialDom = document.querySelector(".botonHistorial").addEventListener("click", () => {
 if(historialVacio == true){
