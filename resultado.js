@@ -7,79 +7,18 @@ historialArray = localStorage.setItem("historial", JSON.stringify(false))
 // Variable con valor booleano para indicar que el historial esta vacio
 historialVacio = true
 // Llama
-uno = document.querySelector(".uno").addEventListener("click", () => {
-   op = 1
-   pushOp()
-   n1.value += op
-   n2.value = ""
-   console.log(arrayResultado)
-})
-dos = document.querySelector(".dos").addEventListener("click", () => {
-   op = 2
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-tres = document.querySelector(".tres").addEventListener("click", () => {
-   op = 3
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-cuatro = document.querySelector(".cuatro").addEventListener("click", () => {
-   op = 4
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-cinco = document.querySelector(".cinco").addEventListener("click", () => {
-   op = 5
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-seis = document.querySelector(".seis").addEventListener("click", () => {
-   op = 6
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-siete = document.querySelector(".siete").addEventListener("click", () => {
-   op = 7
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-ocho = document.querySelector(".ocho").addEventListener("click", () => {
-   op = 8
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-nueve = document.querySelector(".nueve").addEventListener("click", () => {
-   op = 9
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-cero = document.querySelector(".cero").addEventListener("click", () => {
-   op = 0
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-parentesis1 = document.querySelector(".parentesis1").addEventListener("click", () => {
-   op = "("
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
-parentesis2 = document.querySelector(".parentesis2").addEventListener("click", () => {
-   op = ")"
-   pushOp()
-   n1.value += op
-   n2.value = ""
-})
+uno = document.querySelector(".uno").addEventListener("click", functionUno)
+dos = document.querySelector(".dos").addEventListener("click", functionDos)
+tres = document.querySelector(".tres").addEventListener("click", functionTres)
+cuatro = document.querySelector(".cuatro").addEventListener("click", functionCuatro)
+cinco = document.querySelector(".cinco").addEventListener("click", functionCinco)
+seis = document.querySelector(".seis").addEventListener("click", functionSeis)
+siete = document.querySelector(".siete").addEventListener("click", functionSiete)
+ocho = document.querySelector(".ocho").addEventListener("click", functionOcho)
+nueve = document.querySelector(".nueve").addEventListener("click", functionNueve)
+cero = document.querySelector(".cero").addEventListener("click", functionCero)
+parentesis1 = document.querySelector(".parentesis1").addEventListener("click", functionParantesis1)
+parentesis2 = document.querySelector(".parentesis2").addEventListener("click", functionParantesis2)
 n1 = document.querySelector(".n1")
 n2 = document.querySelector(".n2")
 n1.value = ""
@@ -122,11 +61,7 @@ document.querySelector(".back").addEventListener("click", ()=>{
    n1.value = n1.value.slice("", -1)
 })
 
-document.querySelector(".reset").addEventListener("click", () => {
-   localStorage.setItem("historial", JSON.stringify(false))
-   historialArray = []
-   document.querySelector(".textoHistorial").innerHTML = ""
-})
+
 historialDom = document.querySelector(".botonHistorial").addEventListener("click", () => {
 if(historialVacio == true){
    [Swal.fire({
