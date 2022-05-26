@@ -71,3 +71,17 @@ functionUno = () => {
     n1.value += op
     n2.value = ""
  }
+ functionHistorial = () => {
+   if(historialVacio == true){
+      [Swal.fire({
+         icon: 'error',
+         title: 'ERROR',
+         text: "El historial esta vacio",
+   
+      })]
+   }else{
+      document.querySelector(".textoHistorial").innerHTML = ""
+      document.querySelector(".textoHistorial").innerHTML = historialArray.join("")
+   
+   }}
+ 
