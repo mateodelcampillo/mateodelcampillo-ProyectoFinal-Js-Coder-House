@@ -12,18 +12,21 @@
 </head>
 
 <body>
-    <div class="calculadora">
+    <!-- <div class="calculadora">  -->
         <div class="main">
+            <h1 class="h1">Calculadora Basica</h1>
+            <button class="button-conversor"><a href="conversor.html">Click para usar el conversor!</a> </button>
             <div class="resultado">
-            <input type="text" class="n1 button" onmousedown="return false;">
-            <input type="text" class="n2 button" onmousedown="return false;"><br>
-        </div>
-        
+              <input type="text" class="n1 " onmousedown="return false;">
+               <input type="text" class="n2 " onmousedown="return false;"><br>
+
+            </div>
+
             <!-- <a href="conversor.html">Clickeaa</a> -->
 
             <!-- Div contenedor de texto donde se ingresan los numeros a operar -->
-            
-<div class="buttons">
+
+            <div class="buttons">
                 <input type="button" class="siete button" value="7">
                 <input type="button" class="ocho button" value="8">
                 <input type="button" class="nueve button" value="9"><br>
@@ -44,18 +47,19 @@
                 <input type="button" class="back button" id="boton" value="Back">
                 <input type="button" class="botonHistorial button" value="Historial">
                 <input type="button" class="division button" id="boton" value="/">
-                
 
-             </div>
-        </div>
-    </div>
-            <!-- Resultado de la operacion -->
-            <p class="resultado"></p>
-            <!--  Input que mostrara el historial de caluclos -->
 
-            <p class="textoHistorial"></p>
-            <div class="conversor"></div>
-      
+            </div>
+        
+
+  
+    <!-- Resultado de la operacion -->
+    
+    <!--  Input que mostrara el historial de caluclos -->
+
+    <span><h3 class="textoHistorial"></h3></span>
+    
+  </div></div>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="functionButton.js"></script>
