@@ -29,10 +29,7 @@ boton.addEventListener("click", ()=>{
     const temp = monedaUno.value
     monedaUno.value = monedaDos.value
     monedaDos.value = temp
-    // const temp1 = cantidadUno.value;
-    // cantidadUno.value = cantidadDos.value;
-    // cantidadDos.value = temp1
-    calcular()
+   calcular()
 })
 calcular()
 

@@ -1,3 +1,4 @@
+// funciones que envian los valores al texto N1 y pushean a arrayResultado
 functionUno = () => {
     op = 1
     pushOp()
@@ -71,6 +72,7 @@ functionUno = () => {
     n1.value += op
     n2.value = ""
  }
+//  Funcion con condicional, si el historial esta vacio, muestra una alerta, de lo contrariom muestra el historial
  functionHistorial = () => {
    if(historialVacio == true){
       [Swal.fire({

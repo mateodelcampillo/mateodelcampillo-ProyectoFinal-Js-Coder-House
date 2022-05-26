@@ -35,6 +35,14 @@ h1{
     font-size: 12px;
     padding: 5px 12px;
 }
+.btnn{
+    color: white;
+    background: #f5ce52;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
 .moneda{
     padding: 40px 0;
     display: flex;

@@ -103,26 +103,28 @@ body {
     position: absolute;
     height: 500px;
     width: auto;
-    padding-left: 80px;
+    padding-left: 65px;
 }
 .textoHistorial{
-    position: absolute;
-    padding-right: 100px;
-    width: auto;
-    
-    
-}
+  position: absolute;
+    padding-left: 100px;
+ }
 .button-conversor {
-    border-radius: 8px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    color: white;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
     position: relative;
     
     
-    left: 680px;
+    left: -200px;
+    bottom: -100px;
 }
 
 .button-conversor:hover {
+    transition: .5s;
     background-color: rgb(149, 110, 189);
 }
 .h1{
